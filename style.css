@@ -10,23 +10,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vh;
     background-color: #101E2F;
-}
-
-img {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid #BD1115;
 }
 
 .card {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 150vh;
-    max-width: 75%;
+    align-items: center; 
+    width: 800px;
+    max-width: 80%;
     background-color: #fc9;
     text-align: center;
     border-radius: 10px;
@@ -34,19 +26,47 @@ img {
     box-shadow: 4px 4px 0px #b74d4f;
 }
 
+img {
+    display: flex;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #BD1115;
+}
+
 #question {
     padding: 1em;
 }
 
+.btn-grid {
+    display: grid;
+    gap: .5em; 
+}
+
 .btn {
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 10px;
     background-color: #255959;
     color: white;
+    outline: none;
 }
 
-.controls button {
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-btn, #next-btn {
     background-color: #D0B847;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
 }
+
+ .hide {
+    display: none;
+} 
