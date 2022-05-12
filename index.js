@@ -2,7 +2,7 @@
 
 const startButton = document.getElementById('start-btn')
 
-const questionCard = document.getElementById('questions')
+const questionCard = document.getElementById('preguntas')
 
 const image = document.getElementById('shoe-image')
 
@@ -12,9 +12,16 @@ startButton.addEventListener('click', startGame)
 function startGame () {
     startButton.classList.add('hide');
     questionCard.classList.remove('hide');
-    console.log(questionCard)
-    // document.getElementById('shoe-image')
+    
     // console.log('started')
+}
+
+function setNextQuestion () {
+    
+}
+
+function selectAnswer () {
+
 }
 
 // make appear questionaire with image 
@@ -22,3 +29,7 @@ function startGame () {
 // log a score
 
 //create an array with questions 
+
+const questions = [
+
+]
