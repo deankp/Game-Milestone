@@ -4,12 +4,16 @@ const startButton = document.getElementById('start-btn')
 
 const questionCard = document.getElementById('questions')
 
+const image = document.getElementById('shoe-image')
+
 startButton.addEventListener('click', startGame)
 
 // initialize start button
 function startGame () {
     startButton.classList.add('hide');
-    questionCard.classList.remove('hide')
+    questionCard.classList.remove('hide');
+    console.log(questionCard)
+    // document.getElementById('shoe-image')
     // console.log('started')
 }
 
