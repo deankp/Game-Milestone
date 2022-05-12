@@ -71,6 +71,14 @@ img {
     color: white;
 }
 
-.hide {
-    display: none;
+.btn.correct {
+    background-color: rgb(39, 214, 39);
+    color: black;
 } 
+
+.btn.wrong {
+    background-color: red;
+}
+/* .hide {
+    display: none;
+}  */
