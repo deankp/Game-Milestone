@@ -119,10 +119,40 @@ const questions = [
         image: document.getElementById('shoe-image').src = `./images/Yeezy-350.png`,
         question: 'What is the name of this comfortable shoe?',
         answers: [
+            { text: 'Adidas UltraBoost', correct: false },
+            { text: 'Nike Air Force 1', correct: false },
+            { text: 'Adidas Yeezy 350', correct: true },
+            { text: 'New Balance 990', correct: false}
+        ]
+    },
+    {
+        image: document.getElementById('shoe-image').src = `./images/Kobe-Grinch.png`,
+        question: 'Name This Iconic Shoe:',
+        answers: [
             { text: 'Air Jordan 1', correct: true },
             { text: 'Nike Air Max 1', correct: false },
             { text: 'Nike Dunk', correct: false },
             { text: 'Air Jordan 11', correct: false}
         ]
-    }
+    },
+    {
+        image: document.getElementById('shoe-image').src = `./images/Yeezy-350.png`,
+        question: 'What is the name of this comfortable shoe?',
+        answers: [
+            { text: 'Adidas UltraBoost', correct: false },
+            { text: 'Nike Air Force 1', correct: false },
+            { text: 'Adidas Yeezy 350', correct: true },
+            { text: 'New Balance 990', correct: false}
+        ]
+    },
+    {
+        image: document.getElementById('shoe-image').src = `./images/Jordan-11.png`,
+        question: 'What is the name of this comfortable shoe?',
+        answers: [
+            { text: 'Adidas UltraBoost', correct: false },
+            { text: 'Nike Air Force 1', correct: false },
+            { text: 'Adidas Yeezy 350', correct: true },
+            { text: 'New Balance 990', correct: false}
+        ]
+    },
 ]
