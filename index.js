@@ -18,20 +18,39 @@ function startGame () {
     currentQuestion = 0
     questionCard.classList.remove('hide');
     setNextQuestion();
-    
     // console.log('started')
 }
 
+//get the question to take a question
 function showQuestions(question) {
     questionElement.innerText = question.question
+    //create a loop function for answers. ref = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+    question.answers.forEach( answer => {
+        // create a button for each answer
+        let button = document.createElement('button')
+        // set inner text equal to answer
+        button.innerText = answer.text
+        // add button class list
+        button.classList.add('btn')
+        // check to see if answer is correct
+        if (answer.correct) {
+            //set data for correct
+            button.dataset.correct = answer.correct
+        }
+        //add event listener for selected answer
+        button.addEventListener('click', selectAnswer)
+        //add new buttons to answerButton
+        answerButton.appendChild(button)
+    })
 }
 
+// set the question and show it
 function setNextQuestion () {
     showQuestions(shuffledQuestions[currentQuestion])
 }
 
 
-function selectAnswer () {
+function selectAnswer (e) {
 
 }
 
