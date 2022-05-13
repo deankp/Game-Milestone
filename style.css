@@ -35,6 +35,10 @@ img {
     padding: 1em;
 }
 
+#question {
+    padding: 1em;
+}
+
 .btn-grid {
     display: grid;
     grid-template-columns:repeat(2, auto);
