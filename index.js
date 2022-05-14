@@ -23,7 +23,7 @@ nextButton.addEventListener('click', () => {
 function startGame () {
     startButton.classList.add('hide');
     // set shuffled questions in a function to random
-    shuffledQuestions = questions.sort(() => Math.random())
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5)
     currentQuestion = 0
     questionCard.classList.remove('hide');
     setNextQuestion();
@@ -106,7 +106,7 @@ function clearStatus (element) {
 
 const questions = [
     {
-        image: document.getElementById('shoe-image').src = `./images/Jordan 1.png`,
+        image: [document.getElementById('shoe-image').src = `./images/Jordan 1.png`],
         question: 'Name This Iconic Shoe:',
         answers: [
             { text: 'Air Jordan 1', correct: true },
@@ -116,7 +116,7 @@ const questions = [
         ]
     },
     {
-        image: document.getElementById('shoe-image').src = `./images/Yeezy-350.png`,
+        image: [document.getElementById('shoe-image').src =`./images/Yeezy-350.png`],
         question: 'What is the name of this comfortable shoe?',
         answers: [
             { text: 'Adidas UltraBoost', correct: false },
@@ -126,33 +126,33 @@ const questions = [
         ]
     },
     {
-        image: document.getElementById('shoe-image').src = `./images/Kobe-Grinch.png`,
-        question: 'Name This Iconic Shoe:',
+        image: [document.getElementById('shoe-image').src =`./images/Kobe-Grinch.png`],
+        question: 'What is the name of this infamous Christmas Sneaker?',
         answers: [
-            { text: 'Air Jordan 1', correct: true },
-            { text: 'Nike Air Max 1', correct: false },
-            { text: 'Nike Dunk', correct: false },
+            { text: 'Nike Foamposite', correct: false },
+            { text: 'Nike Air Max 97', correct: false },
+            { text: 'Nike Kobe Grinch', correct: true },
             { text: 'Air Jordan 11', correct: false}
         ]
     },
     {
-        image: document.getElementById('shoe-image').src = `./images/Yeezy-350.png`,
+        image: [document.getElementById('shoe-image').src = `./images/Jordan-4.png`],
         question: 'What is the name of this comfortable shoe?',
         answers: [
-            { text: 'Adidas UltraBoost', correct: false },
+            { text: 'Air Jordan 5', correct: false },
             { text: 'Nike Air Force 1', correct: false },
-            { text: 'Adidas Yeezy 350', correct: true },
-            { text: 'New Balance 990', correct: false}
+            { text: 'Air Max 95', correct: false },
+            { text: 'Air Jordan 4', correct: true}
         ]
     },
     {
-        image: document.getElementById('shoe-image').src = `./images/Jordan-11.png`,
-        question: 'What is the name of this comfortable shoe?',
+        image: [document.getElementById('shoe-image').src =`./images/Jordan-11.png`],
+        question: 'Name this sought after shoe:',
         answers: [
-            { text: 'Adidas UltraBoost', correct: false },
-            { text: 'Nike Air Force 1', correct: false },
-            { text: 'Adidas Yeezy 350', correct: true },
-            { text: 'New Balance 990', correct: false}
+            { text: 'Air Jordan 13', correct: false },
+            { text: 'Air Jordan 11', correct: true },
+            { text: 'Air Jordan 6', correct: false },
+            { text: 'Air Jordan 1', correct: false}
         ]
     },
 ]
