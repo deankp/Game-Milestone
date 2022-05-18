@@ -10,6 +10,7 @@ const questionElement = document.getElementById('question')
 
 const answerButton = document.getElementById('answer-buttons')
 
+
 startButton.addEventListener('click', startGame)
 
 //make the next button work for each question
@@ -137,7 +138,7 @@ const questions = [
     },
     {
         image: [document.getElementById('shoe-image').src = `./images/Jordan-4.png`],
-        question: 'What is the name of this comfortable shoe?',
+        question: 'What is the name of this unique shoe?',
         answers: [
             { text: 'Air Jordan 5', correct: false },
             { text: 'Nike Air Force 1', correct: false },
