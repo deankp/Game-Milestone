@@ -39,6 +39,8 @@ function setNextQuestion () {
 //get the question to take a question
 function showQuestions(question) {
     questionElement.innerText = question.question
+    // integrate image by question.image "credit lead instructor SD-02"
+    document.getElementById('shoe-image').src = question.image 
     //create a loop function for answers. ref = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
     question.answers.forEach( answer => {
         // create a button for each answer
@@ -62,6 +64,7 @@ function showQuestions(question) {
 //resets question default state and hides next button
 function nextQuestion() {
     nextButton.classList.add('hide')
+    
     // loop through all children to remove first set of answers 
     while (answerButton.firstChild) {
        answerButton.removeChild(answerButton.firstChild) 
@@ -107,7 +110,7 @@ function clearStatus (element) {
 
 const questions = [
     {
-        image: [document.getElementById('shoe-image').src = `./images/Jordan 1.png`],
+        image:  `./images/Jordan 1.png`,
         question: 'Name This Iconic Shoe:',
         answers: [
             { text: 'Air Jordan 1', correct: true },
@@ -117,7 +120,7 @@ const questions = [
         ]
     },
     {
-        image: [document.getElementById('shoe-image').src =`./images/Yeezy-350.png`],
+        image: `./images/Yeezy-350.png`,
         question: 'What is the name of this comfortable shoe?',
         answers: [
             { text: 'Adidas UltraBoost', correct: false },
@@ -127,7 +130,7 @@ const questions = [
         ]
     },
     {
-        image: [document.getElementById('shoe-image').src =`./images/Kobe-Grinch.png`],
+        image: `./images/Kobe-Grinch.png`,
         question: 'What is the name of this infamous Christmas Sneaker?',
         answers: [
             { text: 'Nike Foamposite', correct: false },
@@ -137,7 +140,7 @@ const questions = [
         ]
     },
     {
-        image: [document.getElementById('shoe-image').src = `./images/Jordan-4.png`],
+        image:  `./images/Jordan-4.png`,
         question: 'What is the name of this unique shoe?',
         answers: [
             { text: 'Air Jordan 5', correct: false },
@@ -147,7 +150,7 @@ const questions = [
         ]
     },
     {
-        image: [document.getElementById('shoe-image').src =`./images/Jordan-11.png`],
+        image: `./images/Jordan-11.png`,
         question: 'Name this sought after shoe:',
         answers: [
             { text: 'Air Jordan 13', correct: false },
@@ -157,3 +160,5 @@ const questions = [
         ]
     },
 ]
+
+console.log(questions)
