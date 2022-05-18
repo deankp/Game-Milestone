@@ -110,16 +110,6 @@ function clearStatus (element) {
 
 const questions = [
     {
-        image:  `./images/Jordan 1.png`,
-        question: 'Name This Iconic Shoe:',
-        answers: [
-            { text: 'Air Jordan 1', correct: true },
-            { text: 'Nike Air Max 1', correct: false },
-            { text: 'Nike Dunk', correct: false },
-            { text: 'Air Jordan 11', correct: false}
-        ]
-    },
-    {
         image: `./images/Yeezy-350.png`,
         question: 'What is the name of this comfortable shoe?',
         answers: [
@@ -127,6 +117,16 @@ const questions = [
             { text: 'Nike Air Force 1', correct: false },
             { text: 'Adidas Yeezy 350', correct: true },
             { text: 'New Balance 990', correct: false}
+        ]
+    },
+    {
+        image:  `./images/Jordan 1.png`,
+        question: 'Name This Iconic Shoe:',
+        answers: [
+            { text: 'Air Jordan 1', correct: true },
+            { text: 'Nike Air Max 1', correct: false },
+            { text: 'Nike Dunk', correct: false },
+            { text: 'Air Jordan 11', correct: false}
         ]
     },
     {
@@ -140,16 +140,6 @@ const questions = [
         ]
     },
     {
-        image:  `./images/Jordan-4.png`,
-        question: 'What is the name of this unique shoe?',
-        answers: [
-            { text: 'Air Jordan 5', correct: false },
-            { text: 'Nike Air Force 1', correct: false },
-            { text: 'Air Max 95', correct: false },
-            { text: 'Air Jordan 4', correct: true}
-        ]
-    },
-    {
         image: `./images/Jordan-11.png`,
         question: 'Name this sought after shoe:',
         answers: [
@@ -159,6 +149,16 @@ const questions = [
             { text: 'Air Jordan 1', correct: false}
         ]
     },
+    {
+        image:  `./images/Jordan-4.png`,
+        question: 'What is the name of this unique shoe?',
+        answers: [
+            { text: 'Air Jordan 5', correct: false },
+            { text: 'Nike Air Force 1', correct: false },
+            { text: 'Air Max 95', correct: false },
+            { text: 'Air Jordan 4', correct: true}
+        ]
+    },
 ]
 
-console.log(questions)
+//console.log(questions)
