@@ -1,0 +1,24 @@
+{
+  "name": "game-milestone",
+  "version": "1.0.0",
+  "description": "Calling all sneaker enthusiast!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deankp/Game-Milestone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deankp/Game-Milestone/issues"
+  },
+  "homepage": "https://github.com/deankp/Game-Milestone#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
